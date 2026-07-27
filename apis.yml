@@ -1,7 +1,25 @@
 aid: heartthis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/heartthis.png
 name: HeartThis
-description: HeartThis is a company surfaced as a portfolio company of 500-global, gv and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  HeartThis was a mobile fashion shopping and discovery app, surfaced as a portfolio company
+  of 500 Global and GV and added to the API Evangelist network as a stub for enrichment. As of the July
+  2026 enrichment pass the company appears defunct/absorbed: heartthis.com and www.heartthis.com now
+  return a 301 redirect to an OpenSky content page (www.opensky.com/content/general/heartthis), the host
+  serves a long-expired stale wildcard TLS certificate (CN wildcard auctivacommerce.com, expired
+  2022-12-16), and no api, developer, or docs subdomains resolve (NXDOMAIN). No public developer portal,
+  documentation, or API surface could be found, so no API artifacts could be enriched without fabrication.
 url: https://raw.githubusercontent.com/api-evangelist/heartthis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,11 +28,20 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: 'heartthis.com HTTP 301-redirects to www.opensky.com/content/general/heartthis (nginx/1.10.3);
+  HTTPS TLS cert expired (verify fails); api./developer./docs. subdomains NXDOMAIN (re-probed 2026-07-20)'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fashion
+- Shopping
+- Ecommerce
+- Mobile
+- Discovery
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,3 +51,8 @@ maintainers:
 common:
 - type: Website
   url: https://heartthis.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
