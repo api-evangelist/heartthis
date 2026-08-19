@@ -31,7 +31,7 @@ x-tier-reason: portfolio-lead
 x-status: defunct
 x-status-evidence: 'heartthis.com HTTP 301-redirects to www.opensky.com/content/general/heartthis (nginx/1.10.3);
   HTTPS TLS cert expired (verify fails); api./developer./docs. subdomains NXDOMAIN (re-probed 2026-07-20)'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 tags:
